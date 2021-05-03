@@ -1,0 +1,151 @@
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a, .btn-link {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+    
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(250 249 248 / .5);
+}
+
+.windows {
+	position: relative;
+	width: 80px;
+	height: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+}
+
+.windows .wBall {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	opacity: 0;
+	animation: orbit 6s infinite;
+}
+
+.windows .wBall .wInnerBall {
+	width: 10px;
+	height: 10px;
+	background: #e1dfdd;
+	border-radius: 50%;
+	box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108);
+}
+
+.windows .wBall:nth-child(1) {
+	animation-delay: 0.3s;
+}
+
+.windows .wBall:nth-child(2) {
+	animation-delay: 0.6s;
+}
+
+.windows .wBall:nth-child(3) {
+	animation-delay: 0.9s;
+}
+
+.windows .wBall:nth-child(4) {
+	animation-delay: 1.2s;
+}
+
+.windows .wBall:nth-child(5) {
+	animation-delay: 1.5s;
+}
+
+@keyframes orbit {
+	0% {
+		opacity: 1;
+		transform: rotate(180deg);
+		animation-timing-function: ease-out;
+	}
+
+	7% {
+		opacity: 1;
+		transform: rotate(300deg);
+		animation-timing-function: linear;
+	}
+
+	30% {
+		opacity: 1;
+		transform: rotate(410deg);
+		animation-timing-function: ease-in-out;
+	}
+
+	39% {
+		opacity: 1;
+		transform: rotate(645deg);
+		animation-timing-function: linear;
+	}
+
+	70% {
+		opacity: 1;
+		transform: rotate(770deg);
+		animation-timing-function: ease-out;
+	}
+
+	75% {
+		opacity: 1;
+		transform: rotate(900deg);
+		animation-timing-function: ease-out;
+	}
+
+	76% {
+		opacity: 0;
+		transform: rotate(900deg);
+	}
+
+	100% {
+		opacity: 0;
+		transform: rotate(900deg);
+	}
+}
