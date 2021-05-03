@@ -4,7 +4,7 @@
       "anonymousAuthentication": true,
       "iisExpress": {
         "applicationUrl": "https://unusefulcoder-authserver.herokuapp.com/",
-        "sslPort": 80
+        "sslPort": 443
       }
     },
     "profiles": {
